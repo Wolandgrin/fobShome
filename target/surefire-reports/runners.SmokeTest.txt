@@ -1,4 +1,122 @@
 -------------------------------------------------------------------------------
 Test set: runners.SmokeTest
 -------------------------------------------------------------------------------
-Tests run: 28, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 18.849 sec - in runners.SmokeTest
+Tests run: 9, Failures: 2, Errors: 2, Skipped: 4, Time elapsed: 16.84 sec <<< FAILURE!
+When User presses "Sign In" button having xpath "/html/body/div[1]/div[3]/div/div[1]/section/div/button[1]"(Scenario: Page to perform directions could be opened)  Time elapsed: 0.018 sec  <<< FAILURE!
+Element should be visible {By.xpath: /html/body/div[1]/div[3]/div/div[1]/section/div/button[1]}
+Element: '<button class="sign_in_out sign_in_button" data-here-svg="{path: svgIcons.menu_signin}" data-ng-click="logIn()" data-ng-if="!login.isLoggedIn" type="submit" displayed:false></button>'
+Screenshot: file:/D:/Projects/FOBShome/build/reports/tests/1488326184865.0.png
+Timeout: 10 s.
+	at com.codeborne.selenide.impl.WebElementSource.checkCondition(WebElementSource.java:66)
+	at com.codeborne.selenide.impl.WebElementSource.findAndAssertElementIsVisible(WebElementSource.java:72)
+	at com.codeborne.selenide.commands.Click.execute(Click.java:14)
+	at com.codeborne.selenide.commands.Click.execute(Click.java:11)
+	at com.codeborne.selenide.commands.Commands.execute(Commands.java:140)
+	at com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:86)
+	at com.codeborne.selenide.impl.SelenideElementProxy.invoke(SelenideElementProxy.java:62)
+	at com.sun.proxy.$Proxy15.click(Unknown Source)
+	at steps.MyStepdefs.userPressesButtonHavingXpath(MyStepdefs.java:48)
+	at ?.When User presses "Sign In" button having xpath "/html/body/div[1]/div[3]/div/div[1]/section/div/button[1]"(locationCollect.feature:6)
+
+Scenario: Page to perform directions could be opened  Time elapsed: 0.028 sec  <<< FAILURE!
+Element should be visible {By.xpath: /html/body/div[1]/div[3]/div/div[1]/section/div/button[1]}
+Element: '<button class="sign_in_out sign_in_button" data-here-svg="{path: svgIcons.menu_signin}" data-ng-click="logIn()" data-ng-if="!login.isLoggedIn" type="submit" displayed:false></button>'
+Screenshot: file:/D:/Projects/FOBShome/build/reports/tests/1488326184865.0.png
+Timeout: 10 s.
+	at com.codeborne.selenide.impl.WebElementSource.checkCondition(WebElementSource.java:66)
+	at com.codeborne.selenide.impl.WebElementSource.findAndAssertElementIsVisible(WebElementSource.java:72)
+	at com.codeborne.selenide.commands.Click.execute(Click.java:14)
+	at com.codeborne.selenide.commands.Click.execute(Click.java:11)
+	at com.codeborne.selenide.commands.Commands.execute(Commands.java:140)
+	at com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:86)
+	at com.codeborne.selenide.impl.SelenideElementProxy.invoke(SelenideElementProxy.java:62)
+	at com.sun.proxy.$Proxy15.click(Unknown Source)
+	at steps.MyStepdefs.userPressesButtonHavingXpath(MyStepdefs.java:48)
+	at ?.When User presses "Sign In" button having xpath "/html/body/div[1]/div[3]/div/div[1]/section/div/button[1]"(locationCollect.feature:6)
+
+Given User is logged in to "https://wego.here.com" in frame "here-account-sdk" using xpath buttons "//*[@id='sign-in-form']/div[2]/div[6]/form/fieldset[3]/button":(Scenario: )  Time elapsed: 0.001 sec  <<< ERROR!
+cucumber.runtime.CucumberException: Arity mismatch: Step Definition 'steps.MyStepdefs.userIsLoggedInToInFrameUsingXpathButtons(String,String,String) in file:/D:/Projects/FOBShome/target/test-classes/' with pattern [^User is logged in to "([^"]*)" in frame "([^"]*)" using xpath buttons "([^"]*)":$] is declared with 3 parameters. However, the gherkin step has 4 arguments [https://wego.here.com, here-account-sdk, //*[@id='sign-in-form']/div[2]/div[6]/form/fieldset[3]/button, Table:[[sign-in-email, sign-in-password-encrypted], [herewego@gafy.net, qwe123]]]. 
+Step: Given User is logged in to "https://wego.here.com" in frame "here-account-sdk" using xpath buttons "//*[@id='sign-in-form']/div[2]/div[6]/form/fieldset[3]/button":
+	at cucumber.runtime.StepDefinitionMatch.arityMismatch(StepDefinitionMatch.java:102)
+	at cucumber.runtime.StepDefinitionMatch.transformedArgs(StepDefinitionMatch.java:60)
+	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)
+	at cucumber.runtime.Runtime.runStep(Runtime.java:300)
+	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
+	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)
+	at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.api.junit.Cucumber.run(Cucumber.java:100)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+
+Scenario:   Time elapsed: 0.002 sec  <<< ERROR!
+cucumber.runtime.CucumberException: Arity mismatch: Step Definition 'steps.MyStepdefs.userIsLoggedInToInFrameUsingXpathButtons(String,String,String) in file:/D:/Projects/FOBShome/target/test-classes/' with pattern [^User is logged in to "([^"]*)" in frame "([^"]*)" using xpath buttons "([^"]*)":$] is declared with 3 parameters. However, the gherkin step has 4 arguments [https://wego.here.com, here-account-sdk, //*[@id='sign-in-form']/div[2]/div[6]/form/fieldset[3]/button, Table:[[sign-in-email, sign-in-password-encrypted], [herewego@gafy.net, qwe123]]]. 
+Step: Given User is logged in to "https://wego.here.com" in frame "here-account-sdk" using xpath buttons "//*[@id='sign-in-form']/div[2]/div[6]/form/fieldset[3]/button":
+	at cucumber.runtime.StepDefinitionMatch.arityMismatch(StepDefinitionMatch.java:102)
+	at cucumber.runtime.StepDefinitionMatch.transformedArgs(StepDefinitionMatch.java:60)
+	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)
+	at cucumber.runtime.Runtime.runStep(Runtime.java:300)
+	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
+	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)
+	at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.api.junit.Cucumber.run(Cucumber.java:100)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+

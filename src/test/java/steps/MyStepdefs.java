@@ -8,10 +8,9 @@ import org.openqa.selenium.WebElement;
 
 import java.util.List;
 
+import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Condition.visible;
-import static com.codeborne.selenide.Selectors.byId;
-import static com.codeborne.selenide.Selectors.byName;
-import static com.codeborne.selenide.Selectors.byText;
+import static com.codeborne.selenide.Selectors.*;
 import static com.codeborne.selenide.Selenide.*;
 import static com.codeborne.selenide.WebDriverRunner.url;
 import static org.hamcrest.CoreMatchers.containsString;
@@ -23,83 +22,62 @@ public class MyStepdefs {
         open(url);
     }
 
-    @When("^User presses Sign in link with id \"([^\"]*)\"$")
-    public void userPressesSignInLink(String signIn) throws Throwable {
-        $(byId(signIn)).click();
+    @When("^User presses \"([^\"]*)\" button$")
+    public void userPressesDirectionsButton(String title) throws Throwable {
+        $(byTitle(title)).click();
     }
-
-    @Then("^Login page url \"([^\"]*)\" opens$")
-    public void loginPageUrlOpens(String url) throws Throwable {
-        assertThat(url(), containsString(url));
-    }
-
-    @Given("^User navigates to the login page \"([^\"]*)\"$")
-    public void userNavigatesToTheLoginPage(String url) throws Throwable {
-        open(url);
-    }
-
-    @When("^User enters following credentials:$")
-    public void userEntersFollowingCredentials(DataTable table) throws Throwable {
-        List<List<String>> data = table.raw();
-
-        $(By.id(data.get(0).get(0))).setValue(data.get(1).get(0));
-        $(By.id(data.get(0).get(1))).setValue(data.get(1).get(1));
-    }
-
-    @And("^User presses button with name \"([^\"]*)\"$")
-    public void userPressesButton(String submit) throws Throwable {
-        $(byName(submit)).shouldBe(visible).click();
-    }
-
-    @Then("^Page with url \"([^\"]*)\" opens$")
-    public void pageWithUrlOpens(String url) throws Throwable {
-        assertThat(url(), containsString(url));
-    }
-
-    @Given("^Administrator is on the \"([^\"]*)\" page logged in from \"([^\"]*)\" using \"([^\"]*)\" with:$")
-    public void administratorIsLoggedInFromPageUsingWith(String main, String url, String submit, DataTable table) throws Throwable {
-        open(url);
-
-        List<List<String>> data = table.raw();
-        $(By.id(data.get(0).get(0))).setValue(data.get(1).get(0));
-        $(By.id(data.get(0).get(1))).setValue(data.get(1).get(1));
-
-        $(byName(submit)).shouldBe(visible).click();
-    }
-
-    @When("^User presses \"([^\"]*)\" link$")
-    public void userPressesLink(String link) throws Throwable {
-        $(byText(link)).click();
-    }
-
-    @Then("^Appropriate page \"([^\"]*)\" opens$")
-    public void appropriatePageOpensContainingUserId(String url) throws Throwable {
-        assertThat(url(), containsString(url));
-    }
-
-    @And("^Page contains correct userName \"([^\"]*)\"$")
-    public void pageContainsCorrectUserName(String userName) throws Throwable {
-        assertThat($(byText(userName)).toString(), containsString(userName));
-    }
-
-    @And("^page contains correct firstName \"([^\"]*)\"$")
-    public void pageContainsCorrectFirstName(String firstName) throws Throwable {
-        assertThat($(byText(firstName)).toString(), containsString(firstName));
-    }
-
-    @And("^page contains correct lastName \"([^\"]*)\"$")
-    public void pageContainsCorrectLastName(String lastName) throws Throwable {
-        assertThat($(byText(lastName)).toString(), containsString(lastName));
-    }
-
-    @When("^User presses \"([^\"]*)\" link having id \"([^\"]*)\" on the on the left menu bar$")
-    public void userPressesLinkHavingIdOnTheOnTheLeftMenuBar(String title, String id) throws Throwable {
-        $(byId(id)).click();
-    }
-
 
     @Then("^Page with URL \"([^\"]*)\" opens$")
     public void pageWithURLOpens(String url) throws Throwable {
         assertThat(url(), containsString(url));
+    }
+
+    @When("^User enters \"([^\"]*)\" to the text field with id \"([^\"]*)\"$")
+    public void userEntersToTheTextFieldWithId(String location, String id) throws Throwable {
+        $(By.id(id)).setValue(location).pressEnter();
+    }
+
+    @And("^Page title contains \"([^\"]*)\"$")
+    public void pageTitleContains(String title) throws Throwable {
+        sleep(2000);
+        assertThat(title(), containsString(title));
+    }
+
+    @And("^User presses \"([^\"]*)\" button having xpath \"([^\"]*)\"$")
+    public void userPressesButtonHavingXpath(String arg0, String xpath) throws Throwable {
+        $(By.xpath(xpath)).click();
+        switchTo().defaultContent();
+    }
+
+
+    @When("^User enters following credentials in frame \"([^\"]*)\":$")
+    public void userEntersFollowingCredentials(String frame, DataTable table) throws Throwable {
+        switchTo().innerFrame(frame);
+        List<List<String>> data = table.raw();
+
+        $(By.id(data.get(0).get(0))).setValue(data.get(1).get(0));
+        $(By.id(data.get(0).get(1))).setValue(data.get(1).get(1));
+    }
+
+    @And("^Page contains user account details \"([^\"]*)\"$")
+    public void pageContains(String login) throws Throwable {
+        assertThat((byText(login)).toString(), containsString(login));
+    }
+
+    @Given("^User is logged in to \"([^\"]*)\" in frame \"([^\"]*)\" using xpath buttons:$")
+    public void userIsLoggedInToInFrameUsingXpathButtons(String url, String frame, DataTable table) throws Throwable {
+        open(url);
+        List<List<String>> data = table.raw();
+
+        $(By.id(data.get(0).get(2))).click();
+        $(By.id(data.get(0).get(3))).click();
+
+        switchTo().innerFrame(frame);
+
+        $(By.id(data.get(0).get(0))).setValue(data.get(1).get(0));
+        $(By.id(data.get(0).get(1))).setValue(data.get(1).get(1));
+
+        $(By.id(data.get(0).get(4))).click();
+        switchTo().defaultContent();
     }
 }

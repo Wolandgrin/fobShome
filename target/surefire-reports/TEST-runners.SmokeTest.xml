@@ -1,90 +1,207 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="runners.SmokeTest" time="0.029" tests="28" errors="0" skipped="0" failures="0">
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="9" failures="2" name="runners.SmokeTest" time="0.164" errors="2" skipped="4">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
-    <property name="sun.boot.library.path" value="/usr/local/java/jdk1.8.0_121/jre/lib/amd64"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_121\jre\bin"/>
     <property name="java.vm.version" value="25.121-b13"/>
+    <property name="user.country.format" value="RU"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
-    <property name="maven.multiModuleProjectDirectory" value="/home/vladimir/projects/inbhome"/>
+    <property name="maven.multiModuleProjectDirectory" value="D:\Projects\FOBShome"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
-    <property name="path.separator" value=":"/>
+    <property name="path.separator" value=";"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
     <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
     <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
     <property name="user.country" value="US"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
-    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="sun.os.patch.level" value=""/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="/home/vladimir/projects/inbhome"/>
+    <property name="user.dir" value="D:\Projects\FOBShome"/>
     <property name="java.runtime.version" value="1.8.0_121-b13"/>
-    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
-    <property name="java.endorsed.dirs" value="/usr/local/java/jdk1.8.0_121/jre/lib/endorsed"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_121\jre\lib\endorsed"/>
     <property name="os.arch" value="amd64"/>
-    <property name="java.io.tmpdir" value="/tmp"/>
-    <property name="line.separator" value="&#10;"/>
+    <property name="java.io.tmpdir" value="C:\Users\woland\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
-    <property name="os.name" value="Linux"/>
-    <property name="classworlds.conf" value="/usr/share/maven/bin/m2.conf"/>
-    <property name="sun.jnu.encoding" value="UTF-8"/>
-    <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="classworlds.conf" value="D:\Tools\apache-maven-3.3.9\bin\..\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="Cp1251"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_121\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Skype\Phone\;C:\Program Files\Git\cmd;C:\HashiCorp\Vagrant\bin;c:\jruby-9.1.5.0\bin;C:\RailsInstaller\Git\cmd;C:\RailsInstaller\Ruby2.3.0\bin;C:\Users\woland\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Heroku\bin;D:\Tools\apache-maven-3.3.9\bin;."/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.class.version" value="52.0"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
-    <property name="os.version" value="4.4.0-64-generic"/>
-    <property name="user.home" value="/home/vladimir"/>
-    <property name="user.timezone" value="Europe/Tallinn"/>
-    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
-    <property name="file.encoding" value="UTF-8"/>
+    <property name="os.version" value="10.0"/>
+    <property name="user.home" value="C:\Users\woland"/>
+    <property name="user.timezone" value="Europe/Helsinki"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
     <property name="java.specification.version" value="1.8"/>
-    <property name="user.name" value="vladimir"/>
-    <property name="java.class.path" value="/usr/share/maven/boot/plexus-classworlds-2.x.jar"/>
+    <property name="file.encoding" value="Cp1251"/>
+    <property name="user.name" value="woland"/>
+    <property name="java.class.path" value="D:\Tools\apache-maven-3.3.9\bin\..\boot\plexus-classworlds-2.5.2.jar"/>
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="java.home" value="/usr/local/java/jdk1.8.0_121/jre"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_121\jre"/>
     <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean install"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="en"/>
-    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="user.language.format" value="ru"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
     <property name="java.vm.info" value="mixed mode"/>
     <property name="java.version" value="1.8.0_121"/>
-    <property name="java.ext.dirs" value="/usr/local/java/jdk1.8.0_121/jre/lib/ext:/usr/java/packages/lib/ext"/>
-    <property name="securerandom.source" value="file:/dev/./urandom"/>
-    <property name="sun.boot.class.path" value="/usr/local/java/jdk1.8.0_121/jre/lib/resources.jar:/usr/local/java/jdk1.8.0_121/jre/lib/rt.jar:/usr/local/java/jdk1.8.0_121/jre/lib/sunrsasign.jar:/usr/local/java/jdk1.8.0_121/jre/lib/jsse.jar:/usr/local/java/jdk1.8.0_121/jre/lib/jce.jar:/usr/local/java/jdk1.8.0_121/jre/lib/charsets.jar:/usr/local/java/jdk1.8.0_121/jre/lib/jfr.jar:/usr/local/java/jdk1.8.0_121/jre/classes"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_121\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_121\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_121\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_121\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_121\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_121\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_121\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_121\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_121\jre\classes"/>
+    <property name="sun.stderr.encoding" value="cp866"/>
     <property name="java.vendor" value="Oracle Corporation"/>
-    <property name="maven.home" value="/usr/share/maven"/>
-    <property name="file.separator" value="/"/>
+    <property name="maven.home" value="D:\Tools\apache-maven-3.3.9\bin\.."/>
+    <property name="file.separator" value="\"/>
     <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
-    <property name="sun.desktop" value="gnome"/>
-    <property name="sun.cpu.isalist" value=""/>
+    <property name="sun.stdout.encoding" value="cp866"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="Given User navigates to &quot;http://demo.testfire.net/default.aspx&quot;" classname="Scenario: Login page opens correctly" time="0.004"/>
-  <testcase name="When User presses Sign in link with id &quot;_ctl0__ctl0_LoginLink&quot;" classname="Scenario: Login page opens correctly" time="0"/>
-  <testcase name="Then Login page url &quot;http://demo.testfire.net/bank/login.aspx&quot; opens" classname="Scenario: Login page opens correctly" time="0.003"/>
-  <testcase name="Scenario: Login page opens correctly" classname="Scenario: Login page opens correctly" time="0.008"/>
-  <testcase name="Given User navigates to the login page &quot;http://demo.testfire.net/bank/login.aspx&quot;" classname="Scenario: Admin could login successfully" time="0.001"/>
-  <testcase name="When User enters following credentials:" classname="Scenario: Admin could login successfully" time="0.001"/>
-  <testcase name="And User presses button with name &quot;btnSubmit&quot;" classname="Scenario: Admin could login successfully" time="0"/>
-  <testcase name="Then Page with url &quot;http://demo.testfire.net/bank/main.aspx&quot; opens" classname="Scenario: Admin could login successfully" time="0.001"/>
-  <testcase name="Scenario: Admin could login successfully" classname="Scenario: Admin could login successfully" time="0.002"/>
-  <testcase name="Given Administrator is on the &quot;main&quot; page logged in from &quot;http://demo.testfire.net/bank/login.aspx&quot; using &quot;btnSubmit&quot; with:" classname="Scenario: &quot;View Application Values&quot; page is accessible and correct" time="0.001"/>
-  <testcase name="When User presses &quot;View Application Values&quot; link" classname="Scenario: &quot;View Application Values&quot; page is accessible and correct" time="0"/>
-  <testcase name="Then Appropriate page &quot;http://demo.testfire.net/admin/application.aspx&quot; opens" classname="Scenario: &quot;View Application Values&quot; page is accessible and correct" time="0"/>
-  <testcase name="And Page contains correct userName &quot;admin&quot;" classname="Scenario: &quot;View Application Values&quot; page is accessible and correct" time="0.001"/>
-  <testcase name="And page contains correct firstName &quot;admin&quot;" classname="Scenario: &quot;View Application Values&quot; page is accessible and correct" time="0"/>
-  <testcase name="And page contains correct lastName &quot;User&quot;" classname="Scenario: &quot;View Application Values&quot; page is accessible and correct" time="0.001"/>
-  <testcase name="Scenario: &quot;View Application Values&quot; page is accessible and correct" classname="Scenario: &quot;View Application Values&quot; page is accessible and correct" time="0.001"/>
-  <testcase name="Given User navigates to &quot;http://demo.testfire.net/default.aspx&quot;" classname="Scenario: Personal information page opens correctly" time="0"/>
-  <testcase name="When User presses &quot;PERSONAL&quot; link having id &quot;_ctl0__ctl0_Content_CatLink1&quot; on the on the left menu bar" classname="Scenario: Personal information page opens correctly" time="0.001"/>
-  <testcase name="Then Page with URL &quot;http://demo.testfire.net/default.aspx?content=personal.htm&quot; opens" classname="Scenario: Personal information page opens correctly" time="0.001"/>
-  <testcase name="Scenario: Personal information page opens correctly" classname="Scenario: Personal information page opens correctly" time="0.002"/>
-  <testcase name="Given User navigates to &quot;http://demo.testfire.net/default.aspx&quot;" classname="Scenario: Deposit Products page opens correctly" time="0"/>
-  <testcase name="When User presses &quot;Deposit Product&quot; link having id &quot;_ctl0__ctl0_Content_MenuHyperLink1&quot; on the on the left menu bar" classname="Scenario: Deposit Products page opens correctly" time="0"/>
-  <testcase name="Then Page with URL &quot;http://demo.testfire.net/default.aspx?content=personal_deposit.htm&quot; opens" classname="Scenario: Deposit Products page opens correctly" time="0"/>
-  <testcase name="Scenario: Deposit Products page opens correctly" classname="Scenario: Deposit Products page opens correctly" time="0"/>
-  <testcase name="Given User navigates to &quot;http://demo.testfire.net/default.aspx&quot;" classname="Scenario: Checking page opens correctly" time="0"/>
-  <testcase name="When User presses &quot;Checking&quot; link having id &quot;_ctl0__ctl0_Content_MenuHyperLink2&quot; on the on the left menu bar" classname="Scenario: Checking page opens correctly" time="0"/>
-  <testcase name="Then Page with URL &quot;http://demo.testfire.net/default.aspx?content=personal_checking.htm&quot; opens" classname="Scenario: Checking page opens correctly" time="0"/>
-  <testcase name="Scenario: Checking page opens correctly" classname="Scenario: Checking page opens correctly" time="0.001"/>
+  <testcase classname="Scenario: Page to perform directions could be opened" name="Given User navigates to &quot;https://wego.here.com&quot;" time="0.003"/>
+  <testcase classname="Scenario: Page to perform directions could be opened" name="When User presses &quot;Sign In&quot; button having xpath &quot;/html/body/div[1]/div[3]/div/div[1]/section/div/button[1]&quot;" time="0.018">
+    <failure message="Element should be visible {By.xpath: /html/body/div[1]/div[3]/div/div[1]/section/div/button[1]}
+Element: &apos;&lt;button class=&quot;sign_in_out sign_in_button&quot; data-here-svg=&quot;{path: svgIcons.menu_signin}&quot; data-ng-click=&quot;logIn()&quot; data-ng-if=&quot;!login.isLoggedIn&quot; type=&quot;submit&quot; displayed:false&gt;&lt;/button&gt;&apos;" type="Element should be visible {By.xpath">Element should be visible {By.xpath: /html/body/div[1]/div[3]/div/div[1]/section/div/button[1]}
+Element: &apos;&lt;button class=&quot;sign_in_out sign_in_button&quot; data-here-svg=&quot;{path: svgIcons.menu_signin}&quot; data-ng-click=&quot;logIn()&quot; data-ng-if=&quot;!login.isLoggedIn&quot; type=&quot;submit&quot; displayed:false&gt;&lt;/button&gt;&apos;
+Screenshot: file:/D:/Projects/FOBShome/build/reports/tests/1488326184865.0.png
+Timeout: 10 s.
+	at com.codeborne.selenide.impl.WebElementSource.checkCondition(WebElementSource.java:66)
+	at com.codeborne.selenide.impl.WebElementSource.findAndAssertElementIsVisible(WebElementSource.java:72)
+	at com.codeborne.selenide.commands.Click.execute(Click.java:14)
+	at com.codeborne.selenide.commands.Click.execute(Click.java:11)
+	at com.codeborne.selenide.commands.Commands.execute(Commands.java:140)
+	at com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:86)
+	at com.codeborne.selenide.impl.SelenideElementProxy.invoke(SelenideElementProxy.java:62)
+	at com.sun.proxy.$Proxy15.click(Unknown Source)
+	at steps.MyStepdefs.userPressesButtonHavingXpath(MyStepdefs.java:48)
+	at ✽.When User presses &quot;Sign In&quot; button having xpath &quot;/html/body/div[1]/div[3]/div/div[1]/section/div/button[1]&quot;(locationCollect.feature:6)
+</failure>
+  </testcase>
+  <testcase classname="Scenario: Page to perform directions could be opened" name="Scenario: Page to perform directions could be opened" time="0.028">
+    <failure message="Element should be visible {By.xpath: /html/body/div[1]/div[3]/div/div[1]/section/div/button[1]}
+Element: &apos;&lt;button class=&quot;sign_in_out sign_in_button&quot; data-here-svg=&quot;{path: svgIcons.menu_signin}&quot; data-ng-click=&quot;logIn()&quot; data-ng-if=&quot;!login.isLoggedIn&quot; type=&quot;submit&quot; displayed:false&gt;&lt;/button&gt;&apos;" type="Element should be visible {By.xpath">Element should be visible {By.xpath: /html/body/div[1]/div[3]/div/div[1]/section/div/button[1]}
+Element: &apos;&lt;button class=&quot;sign_in_out sign_in_button&quot; data-here-svg=&quot;{path: svgIcons.menu_signin}&quot; data-ng-click=&quot;logIn()&quot; data-ng-if=&quot;!login.isLoggedIn&quot; type=&quot;submit&quot; displayed:false&gt;&lt;/button&gt;&apos;
+Screenshot: file:/D:/Projects/FOBShome/build/reports/tests/1488326184865.0.png
+Timeout: 10 s.
+	at com.codeborne.selenide.impl.WebElementSource.checkCondition(WebElementSource.java:66)
+	at com.codeborne.selenide.impl.WebElementSource.findAndAssertElementIsVisible(WebElementSource.java:72)
+	at com.codeborne.selenide.commands.Click.execute(Click.java:14)
+	at com.codeborne.selenide.commands.Click.execute(Click.java:11)
+	at com.codeborne.selenide.commands.Commands.execute(Commands.java:140)
+	at com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:86)
+	at com.codeborne.selenide.impl.SelenideElementProxy.invoke(SelenideElementProxy.java:62)
+	at com.sun.proxy.$Proxy15.click(Unknown Source)
+	at steps.MyStepdefs.userPressesButtonHavingXpath(MyStepdefs.java:48)
+	at ✽.When User presses &quot;Sign In&quot; button having xpath &quot;/html/body/div[1]/div[3]/div/div[1]/section/div/button[1]&quot;(locationCollect.feature:6)
+</failure>
+  </testcase>
+  <testcase classname="Scenario: Page to perform directions could be opened" name="And User enters following credentials in frame &quot;here-account-sdk&quot;:" time="0.028">
+    <skipped/>
+  </testcase>
+  <testcase classname="Scenario: Page to perform directions could be opened" name="And User presses &quot;Sign In&quot; button having xpath &quot;//*[@id=&apos;sign-in-form&apos;]/div[2]/div[6]/form/fieldset[3]/button&quot;" time="0.028">
+    <skipped/>
+  </testcase>
+  <testcase classname="Scenario: Page to perform directions could be opened" name="Then Page with URL &quot;https://wego.here.com&quot; opens" time="0.028">
+    <skipped/>
+  </testcase>
+  <testcase classname="Scenario: Page to perform directions could be opened" name="And Page contains user account details &quot;here-wego test&quot;" time="0.028">
+    <skipped/>
+  </testcase>
+  <testcase classname="Scenario: " name="Given User is logged in to &quot;https://wego.here.com&quot; in frame &quot;here-account-sdk&quot; using xpath buttons &quot;//*[@id=&apos;sign-in-form&apos;]/div[2]/div[6]/form/fieldset[3]/button&quot;:" time="0.001">
+    <error message="Arity mismatch: Step Definition &apos;steps.MyStepdefs.userIsLoggedInToInFrameUsingXpathButtons(String,String,String) in file:/D:/Projects/FOBShome/target/test-classes/&apos; with pattern [^User is logged in to &quot;([^&quot;]*)&quot; in frame &quot;([^&quot;]*)&quot; using xpath buttons &quot;([^&quot;]*)&quot;:$] is declared with 3 parameters. However, the gherkin step has 4 arguments [https://wego.here.com, here-account-sdk, //*[@id=&apos;sign-in-form&apos;]/div[2]/div[6]/form/fieldset[3]/button, Table:[[sign-in-email, sign-in-password-encrypted], [herewego@gafy.net, qwe123]]]. 
+Step: Given User is logged in to &quot;https://wego.here.com&quot; in frame &quot;here-account-sdk&quot; using xpath buttons &quot;//*[@id=&apos;sign-in-form&apos;]/div[2]/div[6]/form/fieldset[3]/button&quot;:" type="cucumber.runtime.CucumberException">cucumber.runtime.CucumberException: Arity mismatch: Step Definition &apos;steps.MyStepdefs.userIsLoggedInToInFrameUsingXpathButtons(String,String,String) in file:/D:/Projects/FOBShome/target/test-classes/&apos; with pattern [^User is logged in to &quot;([^&quot;]*)&quot; in frame &quot;([^&quot;]*)&quot; using xpath buttons &quot;([^&quot;]*)&quot;:$] is declared with 3 parameters. However, the gherkin step has 4 arguments [https://wego.here.com, here-account-sdk, //*[@id=&apos;sign-in-form&apos;]/div[2]/div[6]/form/fieldset[3]/button, Table:[[sign-in-email, sign-in-password-encrypted], [herewego@gafy.net, qwe123]]]. 
+Step: Given User is logged in to &quot;https://wego.here.com&quot; in frame &quot;here-account-sdk&quot; using xpath buttons &quot;//*[@id=&apos;sign-in-form&apos;]/div[2]/div[6]/form/fieldset[3]/button&quot;:
+	at cucumber.runtime.StepDefinitionMatch.arityMismatch(StepDefinitionMatch.java:102)
+	at cucumber.runtime.StepDefinitionMatch.transformedArgs(StepDefinitionMatch.java:60)
+	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)
+	at cucumber.runtime.Runtime.runStep(Runtime.java:300)
+	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
+	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)
+	at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.api.junit.Cucumber.run(Cucumber.java:100)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</error>
+  </testcase>
+  <testcase classname="Scenario: " name="Scenario: " time="0.002">
+    <error message="Arity mismatch: Step Definition &apos;steps.MyStepdefs.userIsLoggedInToInFrameUsingXpathButtons(String,String,String) in file:/D:/Projects/FOBShome/target/test-classes/&apos; with pattern [^User is logged in to &quot;([^&quot;]*)&quot; in frame &quot;([^&quot;]*)&quot; using xpath buttons &quot;([^&quot;]*)&quot;:$] is declared with 3 parameters. However, the gherkin step has 4 arguments [https://wego.here.com, here-account-sdk, //*[@id=&apos;sign-in-form&apos;]/div[2]/div[6]/form/fieldset[3]/button, Table:[[sign-in-email, sign-in-password-encrypted], [herewego@gafy.net, qwe123]]]. 
+Step: Given User is logged in to &quot;https://wego.here.com&quot; in frame &quot;here-account-sdk&quot; using xpath buttons &quot;//*[@id=&apos;sign-in-form&apos;]/div[2]/div[6]/form/fieldset[3]/button&quot;:" type="cucumber.runtime.CucumberException">cucumber.runtime.CucumberException: Arity mismatch: Step Definition &apos;steps.MyStepdefs.userIsLoggedInToInFrameUsingXpathButtons(String,String,String) in file:/D:/Projects/FOBShome/target/test-classes/&apos; with pattern [^User is logged in to &quot;([^&quot;]*)&quot; in frame &quot;([^&quot;]*)&quot; using xpath buttons &quot;([^&quot;]*)&quot;:$] is declared with 3 parameters. However, the gherkin step has 4 arguments [https://wego.here.com, here-account-sdk, //*[@id=&apos;sign-in-form&apos;]/div[2]/div[6]/form/fieldset[3]/button, Table:[[sign-in-email, sign-in-password-encrypted], [herewego@gafy.net, qwe123]]]. 
+Step: Given User is logged in to &quot;https://wego.here.com&quot; in frame &quot;here-account-sdk&quot; using xpath buttons &quot;//*[@id=&apos;sign-in-form&apos;]/div[2]/div[6]/form/fieldset[3]/button&quot;:
+	at cucumber.runtime.StepDefinitionMatch.arityMismatch(StepDefinitionMatch.java:102)
+	at cucumber.runtime.StepDefinitionMatch.transformedArgs(StepDefinitionMatch.java:60)
+	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)
+	at cucumber.runtime.Runtime.runStep(Runtime.java:300)
+	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
+	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)
+	at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.api.junit.Cucumber.run(Cucumber.java:100)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</error>
+  </testcase>
 </testsuite>
