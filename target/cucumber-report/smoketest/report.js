@@ -1,9 +1,9 @@
 $(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("locationCollect.feature");
 formatter.feature({
   "line": 2,
-  "name": "Location",
+  "name": "Add place to collection",
   "description": "",
-  "id": "location",
+  "id": "add-place-to-collection",
   "keyword": "Feature",
   "tags": [
     {
@@ -14,9 +14,9 @@ formatter.feature({
 });
 formatter.scenario({
   "line": 4,
-  "name": "Page to perform directions could be opened",
+  "name": "User could log in to the web page",
   "description": "",
-  "id": "location;page-to-perform-directions-could-be-opened",
+  "id": "add-place-to-collection;user-could-log-in-to-the-web-page",
   "type": "scenario",
   "keyword": "Scenario"
 });
@@ -27,11 +27,16 @@ formatter.step({
 });
 formatter.step({
   "line": 6,
-  "name": "User presses \"Sign In\" button having xpath \"/html/body/div[1]/div[3]/div/div[1]/section/div/button[1]\"",
+  "name": "User presses \"Menu\" button having css \"button.menu_access_btn.icon_btn\"",
   "keyword": "When "
 });
 formatter.step({
   "line": 7,
+  "name": "User presses \"Sign In\" button having css \"button.sign_in_out.sign_in_button\"",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 8,
   "name": "User enters following credentials in frame \"here-account-sdk\":",
   "rows": [
     {
@@ -39,21 +44,16 @@ formatter.step({
         "sign-in-email",
         "sign-in-password-encrypted"
       ],
-      "line": 8
+      "line": 9
     },
     {
       "cells": [
         "herewego@gafy.net",
         "qwe123"
       ],
-      "line": 9
+      "line": 10
     }
   ],
-  "keyword": "And "
-});
-formatter.step({
-  "line": 10,
-  "name": "User presses \"Sign In\" button having xpath \"//*[@id\u003d\u0027sign-in-form\u0027]/div[2]/div[6]/form/fieldset[3]/button\"",
   "keyword": "And "
 });
 formatter.step({
@@ -76,7 +76,24 @@ formatter.match({
   "location": "MyStepdefs.userNavigatesTo(String)"
 });
 formatter.result({
-  "duration": 5435506549,
+  "duration": 6327898633,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Menu",
+      "offset": 14
+    },
+    {
+      "val": "button.menu_access_btn.icon_btn",
+      "offset": 39
+    }
+  ],
+  "location": "MyStepdefs.userPressesButtonHavingCSS(String,String)"
+});
+formatter.result({
+  "duration": 1907535228,
   "status": "passed"
 });
 formatter.match({
@@ -86,16 +103,15 @@ formatter.match({
       "offset": 14
     },
     {
-      "val": "/html/body/div[1]/div[3]/div/div[1]/section/div/button[1]",
-      "offset": 44
+      "val": "button.sign_in_out.sign_in_button",
+      "offset": 42
     }
   ],
-  "location": "MyStepdefs.userPressesButtonHavingXpath(String,String)"
+  "location": "MyStepdefs.userPressesButtonHavingCSS(String,String)"
 });
 formatter.result({
-  "duration": 10514511954,
-  "error_message": "Element should be visible {By.xpath: /html/body/div[1]/div[3]/div/div[1]/section/div/button[1]}\nElement: \u0027\u003cbutton class\u003d\"sign_in_out sign_in_button\" data-here-svg\u003d\"{path: svgIcons.menu_signin}\" data-ng-click\u003d\"logIn()\" data-ng-if\u003d\"!login.isLoggedIn\" type\u003d\"submit\" displayed:false\u003e\u003c/button\u003e\u0027\nScreenshot: file:/D:/Projects/FOBShome/build/reports/tests/1488326184865.0.png\nTimeout: 10 s.\r\n\tat com.codeborne.selenide.impl.WebElementSource.checkCondition(WebElementSource.java:66)\r\n\tat com.codeborne.selenide.impl.WebElementSource.findAndAssertElementIsVisible(WebElementSource.java:72)\r\n\tat com.codeborne.selenide.commands.Click.execute(Click.java:14)\r\n\tat com.codeborne.selenide.commands.Click.execute(Click.java:11)\r\n\tat com.codeborne.selenide.commands.Commands.execute(Commands.java:140)\r\n\tat com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:86)\r\n\tat com.codeborne.selenide.impl.SelenideElementProxy.invoke(SelenideElementProxy.java:62)\r\n\tat com.sun.proxy.$Proxy15.click(Unknown Source)\r\n\tat steps.MyStepdefs.userPressesButtonHavingXpath(MyStepdefs.java:48)\r\n\tat ✽.When User presses \"Sign In\" button having xpath \"/html/body/div[1]/div[3]/div/div[1]/section/div/button[1]\"(locationCollect.feature:6)\r\n",
-  "status": "failed"
+  "duration": 1552273524,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -107,23 +123,8 @@ formatter.match({
   "location": "MyStepdefs.userEntersFollowingCredentials(String,DataTable)"
 });
 formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Sign In",
-      "offset": 14
-    },
-    {
-      "val": "//*[@id\u003d\u0027sign-in-form\u0027]/div[2]/div[6]/form/fieldset[3]/button",
-      "offset": 44
-    }
-  ],
-  "location": "MyStepdefs.userPressesButtonHavingXpath(String,String)"
-});
-formatter.result({
-  "status": "skipped"
+  "duration": 1005816856,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -135,7 +136,8 @@ formatter.match({
   "location": "MyStepdefs.pageWithURLOpens(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 22564693,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -144,22 +146,23 @@ formatter.match({
       "offset": 36
     }
   ],
-  "location": "MyStepdefs.pageContains(String)"
+  "location": "MyStepdefs.pageContainsUserAccountDetails(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 2659997,
+  "status": "passed"
 });
 formatter.scenario({
   "line": 14,
-  "name": "",
+  "name": "Logged in user can add location to collections",
   "description": "",
-  "id": "location;",
+  "id": "add-place-to-collection;logged-in-user-can-add-location-to-collections",
   "type": "scenario",
   "keyword": "Scenario"
 });
 formatter.step({
   "line": 15,
-  "name": "User is logged in to \"https://wego.here.com\" in frame \"here-account-sdk\" using xpath buttons \"//*[@id\u003d\u0027sign-in-form\u0027]/div[2]/div[6]/form/fieldset[3]/button\":",
+  "name": "User is logged in to \"https://wego.here.com\" in frame \"here-account-sdk\" using buttons:",
   "rows": [
     {
       "cells": [
@@ -174,9 +177,55 @@ formatter.step({
         "qwe123"
       ],
       "line": 17
+    },
+    {
+      "cells": [
+        "button.menu_access_btn.icon_btn",
+        "button to open menu"
+      ],
+      "line": 18
+    },
+    {
+      "cells": [
+        "button.sign_in_out.sign_out_button",
+        "button to sign out"
+      ],
+      "line": 19
+    },
+    {
+      "cells": [
+        "button.sign_in_out.sign_in_button",
+        "button to sign in"
+      ],
+      "line": 20
     }
   ],
   "keyword": "Given "
+});
+formatter.step({
+  "line": 21,
+  "name": "User enters location \"Prague\" to the textfield with xpath \"//*[@id\u003d\u0027searchbar\u0027]/div/div[1]/input\"",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 22,
+  "name": "User presses \"Collect\" button having xpath \"/html/body/div[1]/div[6]/div/div/div[1]/div[3]/div/div[2]/button\"",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 23,
+  "name": "User presses button \"Start a collection\" or \"New collection\"",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 24,
+  "name": "User enters \"My lovely Prague \" to the field with id \"collection_name\"",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 25,
+  "name": "Page contains collection \"My Lovely Prague \"",
+  "keyword": "Then "
 });
 formatter.match({
   "arguments": [
@@ -187,17 +236,288 @@ formatter.match({
     {
       "val": "here-account-sdk",
       "offset": 55
-    },
-    {
-      "val": "//*[@id\u003d\u0027sign-in-form\u0027]/div[2]/div[6]/form/fieldset[3]/button",
-      "offset": 94
     }
   ],
-  "location": "MyStepdefs.userIsLoggedInToInFrameUsingXpathButtons(String,String,String)"
+  "location": "MyStepdefs.userIsLoggedInToInFrameUsingButtons(String,String,DataTable)"
 });
 formatter.result({
-  "duration": 710580,
-  "error_message": "cucumber.runtime.CucumberException: Arity mismatch: Step Definition \u0027steps.MyStepdefs.userIsLoggedInToInFrameUsingXpathButtons(String,String,String) in file:/D:/Projects/FOBShome/target/test-classes/\u0027 with pattern [^User is logged in to \"([^\"]*)\" in frame \"([^\"]*)\" using xpath buttons \"([^\"]*)\":$] is declared with 3 parameters. However, the gherkin step has 4 arguments [https://wego.here.com, here-account-sdk, //*[@id\u003d\u0027sign-in-form\u0027]/div[2]/div[6]/form/fieldset[3]/button, Table:[[sign-in-email, sign-in-password-encrypted], [herewego@gafy.net, qwe123]]]. \nStep: Given User is logged in to \"https://wego.here.com\" in frame \"here-account-sdk\" using xpath buttons \"//*[@id\u003d\u0027sign-in-form\u0027]/div[2]/div[6]/form/fieldset[3]/button\":\r\n\tat cucumber.runtime.StepDefinitionMatch.arityMismatch(StepDefinitionMatch.java:102)\r\n\tat cucumber.runtime.StepDefinitionMatch.transformedArgs(StepDefinitionMatch.java:60)\r\n\tat cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)\r\n\tat cucumber.runtime.Runtime.runStep(Runtime.java:300)\r\n\tat cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)\r\n\tat cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)\r\n\tat cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)\r\n\tat cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat cucumber.api.junit.Cucumber.run(Cucumber.java:100)\r\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)\r\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)\r\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)\r\n\tat org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)\r\n\tat org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)\r\n",
-  "status": "failed"
+  "duration": 8444022644,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Prague",
+      "offset": 22
+    },
+    {
+      "val": "//*[@id\u003d\u0027searchbar\u0027]/div/div[1]/input",
+      "offset": 59
+    }
+  ],
+  "location": "MyStepdefs.userEntersLocationToTheTextfieldWithXpath(String,String)"
+});
+formatter.result({
+  "duration": 783445716,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Collect",
+      "offset": 14
+    },
+    {
+      "val": "/html/body/div[1]/div[6]/div/div/div[1]/div[3]/div/div[2]/button",
+      "offset": 44
+    }
+  ],
+  "location": "MyStepdefs.userPressesButtonHavingXpath(String,String)"
+});
+formatter.result({
+  "duration": 1585755313,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Start a collection",
+      "offset": 21
+    },
+    {
+      "val": "New collection",
+      "offset": 45
+    }
+  ],
+  "location": "MyStepdefs.userPressesOneOfButtons(String,String)"
+});
+formatter.result({
+  "duration": 1364868120,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "My lovely Prague ",
+      "offset": 13
+    },
+    {
+      "val": "collection_name",
+      "offset": 54
+    }
+  ],
+  "location": "MyStepdefs.userEntersToTheFieldWithId(String,String)"
+});
+formatter.result({
+  "duration": 1046439462,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "My Lovely Prague ",
+      "offset": 26
+    }
+  ],
+  "location": "MyStepdefs.pageContainsCollection(String)"
+});
+formatter.result({
+  "duration": 258393,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 27,
+  "name": "Previously added collection could be removed",
+  "description": "",
+  "id": "add-place-to-collection;previously-added-collection-could-be-removed",
+  "type": "scenario",
+  "keyword": "Scenario"
+});
+formatter.step({
+  "line": 28,
+  "name": "User is logged in to \"https://wego.here.com\" in frame \"here-account-sdk\" using buttons:",
+  "rows": [
+    {
+      "cells": [
+        "sign-in-email",
+        "sign-in-password-encrypted"
+      ],
+      "line": 29
+    },
+    {
+      "cells": [
+        "herewego@gafy.net",
+        "qwe123"
+      ],
+      "line": 30
+    },
+    {
+      "cells": [
+        "button.menu_access_btn.icon_btn",
+        "button to open menu"
+      ],
+      "line": 31
+    },
+    {
+      "cells": [
+        "button.sign_in_out.sign_out_button",
+        "button to sign out"
+      ],
+      "line": 32
+    },
+    {
+      "cells": [
+        "button.sign_in_out.sign_in_button",
+        "button to sign in"
+      ],
+      "line": 33
+    }
+  ],
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 34,
+  "name": "User presses \"Menu\" button having css \"button.menu_access_btn.icon_btn\"",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 35,
+  "name": "User presses \"Collections\" button having xpath \"/html/body/div[1]/div[3]/div/div[2]/div/div[1]/div[3]\"",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 36,
+  "name": "User presses \"Edit\" button having xpath \"/html/body/div[1]/div[6]/div/div/div[1]/div/div[1]/button\"",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 37,
+  "name": "User presses \"X\" button having xpath \"/html/body/div[1]/div[6]/div/div/div[2]/div/div/button\"",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 38,
+  "name": "User presses \"Yes\" button having css \"button.btn_link.confirm\"",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 39,
+  "name": "Page contains 1 collection less in \"Collections\"",
+  "keyword": "Then "
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "https://wego.here.com",
+      "offset": 22
+    },
+    {
+      "val": "here-account-sdk",
+      "offset": 55
+    }
+  ],
+  "location": "MyStepdefs.userIsLoggedInToInFrameUsingButtons(String,String,DataTable)"
+});
+formatter.result({
+  "duration": 10106528463,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Menu",
+      "offset": 14
+    },
+    {
+      "val": "button.menu_access_btn.icon_btn",
+      "offset": 39
+    }
+  ],
+  "location": "MyStepdefs.userPressesButtonHavingCSS(String,String)"
+});
+formatter.result({
+  "duration": 575347759,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Collections",
+      "offset": 14
+    },
+    {
+      "val": "/html/body/div[1]/div[3]/div/div[2]/div/div[1]/div[3]",
+      "offset": 48
+    }
+  ],
+  "location": "MyStepdefs.userPressesButtonHavingXpath(String,String)"
+});
+formatter.result({
+  "duration": 738544536,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Edit",
+      "offset": 14
+    },
+    {
+      "val": "/html/body/div[1]/div[6]/div/div/div[1]/div/div[1]/button",
+      "offset": 41
+    }
+  ],
+  "location": "MyStepdefs.userPressesButtonHavingXpath(String,String)"
+});
+formatter.result({
+  "duration": 868558972,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "X",
+      "offset": 14
+    },
+    {
+      "val": "/html/body/div[1]/div[6]/div/div/div[2]/div/div/button",
+      "offset": 38
+    }
+  ],
+  "location": "MyStepdefs.userPressesButtonHavingXpath(String,String)"
+});
+formatter.result({
+  "duration": 670861324,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Yes",
+      "offset": 14
+    },
+    {
+      "val": "button.btn_link.confirm",
+      "offset": 38
+    }
+  ],
+  "location": "MyStepdefs.userPressesButtonHavingCSS(String,String)"
+});
+formatter.result({
+  "duration": 662490725,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Collections",
+      "offset": 36
+    }
+  ],
+  "location": "MyStepdefs.pageContainsLessCollections(String)"
+});
+formatter.result({
+  "duration": 500267750,
+  "status": "passed"
 });
 });

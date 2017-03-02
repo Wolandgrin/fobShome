@@ -41,7 +41,7 @@ $(document).ready(function() {
 
 
   
-<title>Cucumber Reports (no 1) - Feature: Location</title>
+<title>Cucumber Reports (no 1) - Feature: Add place to collection</title>
 
 </head>
 <body>
@@ -76,7 +76,7 @@ $(document).ready(function() {
     <tr class="info">
       <td>cucumber-selenide-example</td>
               <td>1</td>
-            <td>01 &#1084;&#1072;&#1088; 2017, 01:56</td>
+            <td>02 &#1084;&#1072;&#1088; 2017, 02:19</td>
     </tr>
   </tbody>
 </table>
@@ -128,20 +128,20 @@ $(document).ready(function() {
 
         <tbody>
         <tr>
-          <td class="tagname">Location</td>
-                    <td      class="passed"    >1</td>
-          <td      class="failed"    >2</td>
-          <td     class="skipped"   >4</td>
+          <td class="tagname">Add place to collection</td>
+                    <td      class="passed"    >19</td>
           <td >0</td>
           <td >0</td>
-          <td class="total">7</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">19</td>
 
+          <td  class="passed"    >3</td>
           <td >0</td>
-          <td  class="failed"    >2</td>
-          <td class="total">2</td>
+          <td class="total">3</td>
 
-          <td class="duration" data-value="15950729083">15s 950ms</td>
-          <td class="failed">Failed</td>
+          <td class="duration" data-value="38166138108">38s 166ms</td>
+          <td class="passed">Passed</td>
         </tr>
         </tbody>
 
@@ -175,9 +175,9 @@ $(document).ready(function() {
       </div>
 
         
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Feature</span>
-  <span class="name">Location</span>
+  <span class="name">Add place to collection</span>
   
 
   </div>
@@ -193,11 +193,11 @@ $(document).ready(function() {
   </div>
 
 
-    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
     
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Scenario</span>
-  <span class="name">Page to perform directions could be opened</span>
+  <span class="name">User could log in to the web page</span>
   
 
        <i class="chevron fa fa-fw"></i>
@@ -206,15 +206,15 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-1" class="collapse collapsable-details  in ">
+  <div id="element-1" class="collapse collapsable-details ">
     
 
 
     
 <div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-2">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
     
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
   
@@ -224,14 +224,14 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-2" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-2" class="inner-level collapse collapsable-details ">
           <div class="step">
         
 <div class="brief passed">
   <span class="keyword indention">Given</span>
   <span class="name">User navigates to &quot;https://wego.here.com&quot;</span>
   
-  <span class="lead-duration duration">5s 435ms</span>
+  <span class="lead-duration duration">6s 327ms</span>
 
   </div>
 
@@ -248,40 +248,15 @@ $(document).ready(function() {
       </div>
           <div class="step">
         
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">When</span>
-  <span class="name">User presses &quot;Sign In&quot; button having xpath &quot;/html/body/div[1]/div[3]/div/div[1]/section/div/button[1]&quot;</span>
+  <span class="name">User presses &quot;Menu&quot; button having css &quot;button.menu_access_btn.icon_btn&quot;</span>
   
-  <span class="lead-duration duration">10s 514ms</span>
+  <span class="lead-duration duration">1s 907ms</span>
 
   </div>
 
         
-
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-3">
-          <a>Error message</a>
-      </div>
-      <div id="msg-3" class="collapse collapsable-details">
-        <pre>Element should be visible {By.xpath: /html/body/div[1]/div[3]/div/div[1]/section/div/button[1]}
-Element: '&lt;button class=&quot;sign_in_out sign_in_button&quot; data-here-svg=&quot;{path: svgIcons.menu_signin}&quot; data-ng-click=&quot;logIn()&quot; data-ng-if=&quot;!login.isLoggedIn&quot; type=&quot;submit&quot; displayed:false&gt;&lt;/button&gt;'
-Screenshot: file:/D:/Projects/FOBShome/build/reports/tests/1488326184865.0.png
-Timeout: 10 s.
-	at com.codeborne.selenide.impl.WebElementSource.checkCondition(WebElementSource.java:66)
-	at com.codeborne.selenide.impl.WebElementSource.findAndAssertElementIsVisible(WebElementSource.java:72)
-	at com.codeborne.selenide.commands.Click.execute(Click.java:14)
-	at com.codeborne.selenide.commands.Click.execute(Click.java:11)
-	at com.codeborne.selenide.commands.Commands.execute(Commands.java:140)
-	at com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:86)
-	at com.codeborne.selenide.impl.SelenideElementProxy.invoke(SelenideElementProxy.java:62)
-	at com.sun.proxy.$Proxy15.click(Unknown Source)
-	at steps.MyStepdefs.userPressesButtonHavingXpath(MyStepdefs.java:48)
-	at &#10045;.When User presses &quot;Sign In&quot; button having xpath &quot;/html/body/div[1]/div[3]/div/div[1]/section/div/button[1]&quot;(locationCollect.feature:6)
-</pre>
-      </div>
-    </div>
-  </div>
 
 
         
@@ -294,11 +269,32 @@ Timeout: 10 s.
       </div>
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">User presses &quot;Sign In&quot; button having css &quot;button.sign_in_out.sign_in_button&quot;</span>
+  
+  <span class="lead-duration duration">1s 552ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
   <span class="keyword indention">And</span>
   <span class="name">User enters following credentials in frame &quot;here-account-sdk&quot;:</span>
   
-  <span class="lead-duration duration">000ms</span>
+  <span class="lead-duration duration">1s 005ms</span>
 
   </div>
 
@@ -325,32 +321,11 @@ Timeout: 10 s.
       </div>
           <div class="step">
         
-<div class="brief skipped">
-  <span class="keyword indention">And</span>
-  <span class="name">User presses &quot;Sign In&quot; button having xpath &quot;//*[@id='sign-in-form']/div[2]/div[6]/form/fieldset[3]/button&quot;</span>
-  
-  <span class="lead-duration duration">000ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">Then</span>
   <span class="name">Page with URL &quot;https://wego.here.com&quot; opens</span>
   
-  <span class="lead-duration duration">000ms</span>
+  <span class="lead-duration duration">022ms</span>
 
   </div>
 
@@ -367,9 +342,206 @@ Timeout: 10 s.
       </div>
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">And</span>
   <span class="name">Page contains user account details &quot;here-wego test&quot;</span>
+  
+  <span class="lead-duration duration">002ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-3">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Logged in user can add location to collections</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-3" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-4">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-4" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">User is logged in to &quot;https://wego.here.com&quot; in frame &quot;here-account-sdk&quot; using buttons:</span>
+  
+  <span class="lead-duration duration">8s 444ms</span>
+
+  </div>
+
+        
+
+
+                  <table class="step-arguments">
+                          <tr>
+                                  <td>sign-in-email</td>
+                                  <td>sign-in-password-encrypted</td>
+                              </tr>
+                          <tr>
+                                  <td>herewego@gafy.net</td>
+                                  <td>qwe123</td>
+                              </tr>
+                          <tr>
+                                  <td>button.menu_access_btn.icon_btn</td>
+                                  <td>button to open menu</td>
+                              </tr>
+                          <tr>
+                                  <td>button.sign_in_out.sign_out_button</td>
+                                  <td>button to sign out</td>
+                              </tr>
+                          <tr>
+                                  <td>button.sign_in_out.sign_in_button</td>
+                                  <td>button to sign in</td>
+                              </tr>
+                      </table>
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">User enters location &quot;Prague&quot; to the textfield with xpath &quot;//*[@id='searchbar']/div/div[1]/input&quot;</span>
+  
+  <span class="lead-duration duration">783ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">User presses &quot;Collect&quot; button having xpath &quot;/html/body/div[1]/div[6]/div/div/div[1]/div[3]/div/div[2]/button&quot;</span>
+  
+  <span class="lead-duration duration">1s 585ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">User presses button &quot;Start a collection&quot; or &quot;New collection&quot;</span>
+  
+  <span class="lead-duration duration">1s 364ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">User enters &quot;My lovely Prague &quot; to the field with id &quot;collection_name&quot;</span>
+  
+  <span class="lead-duration duration">1s 046ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">Page contains collection &quot;My Lovely Prague &quot;</span>
   
   <span class="lead-duration duration">000ms</span>
 
@@ -403,11 +575,11 @@ Timeout: 10 s.
   </div>
 
 
-    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-4">
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-5">
     
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Scenario</span>
-  <span class="name"></span>
+  <span class="name">Previously added collection could be removed</span>
   
 
        <i class="chevron fa fa-fw"></i>
@@ -416,15 +588,15 @@ Timeout: 10 s.
   </span>
   <div class="description indention"></div>
 
-  <div id="element-4" class="collapse collapsable-details  in ">
+  <div id="element-5" class="collapse collapsable-details ">
     
 
 
     
 <div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-5">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-6">
     
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
   
@@ -434,70 +606,18 @@ Timeout: 10 s.
 
   </div>
 
-  <div id="steps-5" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-6" class="inner-level collapse collapsable-details ">
           <div class="step">
         
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Given</span>
-  <span class="name">User is logged in to &quot;https://wego.here.com&quot; in frame &quot;here-account-sdk&quot; using xpath buttons &quot;//*[@id='sign-in-form']/div[2]/div[6]/form/fieldset[3]/button&quot;:</span>
+  <span class="name">User is logged in to &quot;https://wego.here.com&quot; in frame &quot;here-account-sdk&quot; using buttons:</span>
   
-  <span class="lead-duration duration">000ms</span>
+  <span class="lead-duration duration">10s 106ms</span>
 
   </div>
 
         
-
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-6">
-          <a>Error message</a>
-      </div>
-      <div id="msg-6" class="collapse collapsable-details">
-        <pre>cucumber.runtime.CucumberException: Arity mismatch: Step Definition 'steps.MyStepdefs.userIsLoggedInToInFrameUsingXpathButtons(String,String,String) in file:/D:/Projects/FOBShome/target/test-classes/' with pattern [^User is logged in to &quot;([^&quot;]*)&quot; in frame &quot;([^&quot;]*)&quot; using xpath buttons &quot;([^&quot;]*)&quot;:$] is declared with 3 parameters. However, the gherkin step has 4 arguments [https://wego.here.com, here-account-sdk, //*[@id='sign-in-form']/div[2]/div[6]/form/fieldset[3]/button, Table:[[sign-in-email, sign-in-password-encrypted], [herewego@gafy.net, qwe123]]]. 
-Step: Given User is logged in to &quot;https://wego.here.com&quot; in frame &quot;here-account-sdk&quot; using xpath buttons &quot;//*[@id='sign-in-form']/div[2]/div[6]/form/fieldset[3]/button&quot;:
-	at cucumber.runtime.StepDefinitionMatch.arityMismatch(StepDefinitionMatch.java:102)
-	at cucumber.runtime.StepDefinitionMatch.transformedArgs(StepDefinitionMatch.java:60)
-	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)
-	at cucumber.runtime.Runtime.runStep(Runtime.java:300)
-	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
-	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
-	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)
-	at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)
-	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)
-	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)
-	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)
-	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at cucumber.api.junit.Cucumber.run(Cucumber.java:100)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-</pre>
-      </div>
-    </div>
-  </div>
 
 
                   <table class="step-arguments">
@@ -509,7 +629,145 @@ Step: Given User is logged in to &quot;https://wego.here.com&quot; in frame &quo
                                   <td>herewego@gafy.net</td>
                                   <td>qwe123</td>
                               </tr>
+                          <tr>
+                                  <td>button.menu_access_btn.icon_btn</td>
+                                  <td>button to open menu</td>
+                              </tr>
+                          <tr>
+                                  <td>button.sign_in_out.sign_out_button</td>
+                                  <td>button to sign out</td>
+                              </tr>
+                          <tr>
+                                  <td>button.sign_in_out.sign_in_button</td>
+                                  <td>button to sign in</td>
+                              </tr>
                       </table>
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">User presses &quot;Menu&quot; button having css &quot;button.menu_access_btn.icon_btn&quot;</span>
+  
+  <span class="lead-duration duration">575ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">User presses &quot;Collections&quot; button having xpath &quot;/html/body/div[1]/div[3]/div/div[2]/div/div[1]/div[3]&quot;</span>
+  
+  <span class="lead-duration duration">738ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">User presses &quot;Edit&quot; button having xpath &quot;/html/body/div[1]/div[6]/div/div/div[1]/div/div[1]/button&quot;</span>
+  
+  <span class="lead-duration duration">868ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">User presses &quot;X&quot; button having xpath &quot;/html/body/div[1]/div[6]/div/div/div[2]/div/div/button&quot;</span>
+  
+  <span class="lead-duration duration">670ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">User presses &quot;Yes&quot; button having css &quot;button.btn_link.confirm&quot;</span>
+  
+  <span class="lead-duration duration">662ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">Page contains 1 collection less in &quot;Collections&quot;</span>
+  
+  <span class="lead-duration duration">500ms</span>
+
+  </div>
+
+        
+
+
         
         
 
