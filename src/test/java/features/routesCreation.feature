@@ -35,5 +35,5 @@ Feature: Route between 2 locations can be created for different route options
     When User enters "Tallinn, Estonia" to the text field with id "itinerary_item_input_0"
     And User enters "Tartu, Estonia" to the text field with id "itinerary_item_input_1"
     Then Page with URL "https://wego.here.com/directions/bicycle" opens
-    And Page title contains "Tallinn, Estonia"
+    And Bicycle page title contains "Tallinn, Estonia"
     And Page title contains "Tartu, Estonia"

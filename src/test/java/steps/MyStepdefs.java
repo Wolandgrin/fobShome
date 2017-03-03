@@ -129,6 +129,12 @@ public class MyStepdefs {
         assertTrue(title().contains(title));
     }
 
+    @And("^Bicycle page title contains \"([^\"]*)\"$")
+    public void bicyclePageTitleContains(String title) throws Throwable {
+        sleep(3000);
+        assertTrue(title().contains(title));
+    }
+
     @And("^Page contains user account details \"([^\"]*)\" in menu \"([^\"]*)\"$")
     public void pageContainsUserAccountDetails(String login, String css) throws Throwable {
         $(byCssSelector(css)).click();
