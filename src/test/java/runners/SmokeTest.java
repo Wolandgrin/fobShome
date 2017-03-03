@@ -12,7 +12,7 @@ import org.junit.runner.RunWith;
         plugin = {"html:target/cucumber-report/smoketest", "json:target/cucumber.json"},
         features = "src/test/java/features",
         glue = "steps",
-        tags = "@locationcollection") //, @routecreation, @phonegpssupport")
+        tags = "@phonegpssupport, @routecreation, @locationcollection")
 
 public class SmokeTest
 {

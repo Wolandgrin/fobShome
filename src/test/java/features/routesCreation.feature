@@ -6,7 +6,7 @@ Feature: Route between 2 locations can be created for different route options
     When User presses "Directions" button
     Then Page with URL "https://wego.here.com/directions" opens
 
-  Scenario: Bicycle drive route direction could be created
+  Scenario: Mixed drive route direction could be created
     Given User navigates to "https://wego.here.com/directions/mix"
     When User enters "Tallinn, Estonia" to the text field with id "itinerary_item_input_0"
     And User enters "Tartu, Estonia" to the text field with id "itinerary_item_input_1"
